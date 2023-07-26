@@ -22,7 +22,7 @@ jobs:
         run: npm install @redocly/cli -g
 
       - name: Generate API documentation
-        run: redocly build-docs SwaggerInventory.yaml -o index2.html --theme.openapi.disableSearch
+        run: redocly build-docs https://raw.githubusercontent.com/guruprakashchinnasamy/poc/main/SwaggerInventory.yaml -o index2.html --theme.openapi.disableSearch
       - name: Commit documentation
         uses: EndBug/add-and-commit@v7
         with:
