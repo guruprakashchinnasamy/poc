@@ -19,7 +19,7 @@ jobs:
           node-version: '14' # You can specify the Node.js version here
 
       - name: Install Redocly CLI
-        run: npm install -g redoc-cli
+        run: npm install @redocly/cli -g
 
       - name: Generate API documentation
-        run: redoc-cli bundle https://raw.githubusercontent.com/guruprakashchinnasamy/poc/main/SwaggerInventory.yaml -o docs/index2.html
+        run: redoc-cli bundle https://raw.githubusercontent.com/guruprakashchinnasamy/poc/main/SwaggerInventory.yaml -o index2.html
