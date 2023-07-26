@@ -22,4 +22,4 @@ jobs:
         run: npm install -g redoc-cli
 
       - name: Generate API documentation
-        run: redoc-cli bundle https://raw.githubusercontent.com/guruprakashchinnasamy/Backstage_App/main/Backstage_docs/SwaggerInventory.yaml -o docs/index2.html
+        run: redoc-cli bundle https://raw.githubusercontent.com/guruprakashchinnasamy/poc/main/SwaggerInventory.yaml -o docs/index2.html
