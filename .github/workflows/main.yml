@@ -23,3 +23,11 @@ jobs:
 
       - name: Generate API documentation
         run: redocly build-docs SwaggerInventory.yaml -o index2.html --theme.openapi.disableSearch
+      - name: Commit documentation
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: 'Update documentation'
+          add: '*.md'
+          github_token: ${{ secrets.GIT_ACTION }}
