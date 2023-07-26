@@ -22,4 +22,4 @@ jobs:
         run: npm install @redocly/cli -g
 
       - name: Generate API documentation
-        run: redoc-cli bundle https://raw.githubusercontent.com/guruprakashchinnasamy/poc/main/SwaggerInventory.yaml -o index2.html
+        run: redoc-cli bundle SwaggerInventory.yaml -o index2.html
